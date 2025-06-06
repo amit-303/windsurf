@@ -15,9 +15,25 @@ body {
   text-align: center;
 }
 
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
 h1 {
   color: #333;
   margin-bottom: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+h1:hover,
+h1:focus {
+  animation: wiggle 0.6s ease;
+  outline: none;
 }
 
 .reset-button {
