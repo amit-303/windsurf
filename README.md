@@ -1,3 +1,6 @@
+This is the tiled game where you have to match the tiles. This was created using windsurf IDE
+
+
 Git commands
 
 When getting started 
